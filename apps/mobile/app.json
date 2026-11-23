@@ -1,0 +1,24 @@
+{
+  "expo": {
+    "name": "Finova",
+    "slug": "finova",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "scheme": "finova",
+    "platforms": [
+      "android"
+    ],
+    "android": {
+      "package": "com.unifiedpersonalfinance.finova"
+    },
+    "plugins": [
+      [
+        "expo-sqlite",
+        {
+          "useSQLCipher": true
+        }
+      ],
+      "expo-font"
+    ]
+  }
+}
