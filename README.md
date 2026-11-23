@@ -1844,7 +1844,7 @@ The debug APK is written to `apps\mobile\android\app\build\outputs\apk\debug\app
 
 ## 28.7 Vercel web and API deployment
 
-The repository includes a single-project Vercel configuration. Import the repository with its root directory set to the repository root; Vercel builds the API workspace and the static Web app, serves the Web output from `apps/web/dist`, and routes `/api/*` through the Fastify serverless handler.
+The repository includes a single-project Vercel configuration. Set Vercel's **Root Directory** to the repository root (`.`), not `apps/web`; otherwise the root `api/[...route].ts` function and `vercel.json` are omitted. Vercel builds the API workspace and the static Web app, serves the Web output from `apps/web/dist`, and routes `/api/*` through the Fastify serverless handler.
 
 Configure these Vercel **Production** environment variables before deploying:
 
